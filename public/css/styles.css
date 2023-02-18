@@ -1,0 +1,328 @@
+/* 
+TODO: 
+-ARRUMAR NOMES DAS CLASSES
+-ARRUMAR CÓDIGO COM GAMBIARRA
+-AGRUPAR CÓDIGOS REPETIDOS
+-EXCLUIR IMAGENS QUE NÃO FOR USAR
+*/
+
+/* cores: #174735 #174735d2 #3E9474 #21946A #942912 #472017 #48E0A8 */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu";
+}
+
+#title {
+  background-color: #174735;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 11%;
+  color: white;
+  
+}
+
+nav ul{
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+}
+
+#company {
+  font-size: 2rem;
+}
+
+.link:hover {
+  color: #fd7159;
+}
+
+button {
+  padding: 16px 32px;
+  border-radius: 16px;
+  border-style: none;
+  background-color: #fd7159;
+  color: white;
+  font-size: 18px;
+}
+
+button:hover{
+  cursor: pointer;
+  background-color: #ff8e7a;
+}
+
+.main-title{
+  background-color: #3E9474;
+  color: white;
+  height: 75vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 8rem;
+}
+
+.text{
+  max-width: 30%;
+}
+
+.imagem{
+  display: flex;
+  justify-content: center;
+  width: 30%;
+}
+
+.abc{
+  width: 100%;
+}
+
+#recursos{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  padding: 0.5rem 10%;
+  height: 48vh;
+  background-color: #f8f8f8;
+}
+
+.rec{
+  width: 20%;
+}
+
+.desc{
+  color: #0000007d;
+}
+
+.feature-icon{
+  color: #174735d2;
+}
+
+.feature-title{
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+#prices{
+  color: black;
+  background-color: #3E9474;
+  text-align: center;
+  padding: 5%;
+}
+
+.prices-title{
+  font-size: 3.5rem;
+  color: #fff;
+  width: 50%;
+  margin: auto;
+  padding: 3%;
+}
+
+.aaa{
+  height: 50vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0.5rem 5%;
+}
+
+hr{
+  border: 1px solid rgba(0, 0, 0, 0.355);
+}
+
+.container-prices{
+  background-color: white;
+  /* height: 90%; */
+  width: 15%;
+  border: 1px solid rgba(0, 0, 0, 0.355);
+  /* border-bottom: 0; */
+  border-radius: 2% 2% 0 0;
+}
+
+.footer{
+  background-color: #174735;
+  color: white;
+  display: flex;
+  height: 10vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.price-plan{
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+
+.price{
+  font-size: 2rem;
+}
+
+.cents{
+  font-size: 1rem;
+}
+
+.categorias{
+  margin: 15% 0;
+}
+
+.coiso{
+  /* margin-bottom: 1px; */
+  width: 100%;
+  border-radius: 2% 2% 0 0;
+}
+
+@media (max-width: 1100px) {
+  button{
+    display: flex;
+    padding: 12px 16px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  li{
+    align-items: center;
+    text-align: center;
+  }
+
+  .link{
+    font-size: 0.7rem;
+  }
+  
+}
+
+@media (max-width: 990px){
+
+}
+
+@media (max-width: 804px) {
+  nav{
+    display: none;
+  }
+ 
+  .text{
+    font-size: 0.5rem;
+    max-width: 40%;
+  }
+
+  .main-title{
+    justify-content: center;
+    flex-direction: column;
+    gap: 0;
+    height: 50vh;
+  }
+
+  #recursos{
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    height: 90vh;
+  }
+
+  .price-plan{
+    font-size: 0.7rem;
+  }
+
+  .price{
+    font-size: 1.2rem;
+  }
+
+  .container-prices{
+    width: 30%;
+  }
+
+  .aaa{
+    justify-content: space-around;
+  }
+  .categorias{
+    font-size: 0.7rem;
+  }
+  .coiso{
+    font-size: 0.7rem;
+  }
+  .cents{
+    font-size: 0.5rem;
+  }
+  .rec{
+    width: 100%;
+  }
+
+  .fa-6x{
+    font-size: 2.5rem;
+  }
+
+  .prices-title{
+    font-size: 1.4rem;
+  }
+
+ li{
+    display: flex;
+    padding: 12px 16px;
+    justify-content: center;
+    align-items: center;
+  }
+  .one,
+  .two,
+  .three{
+    background-color: #fff;
+    height: 5px;
+    width: 100%;
+    margin: 6px auto;
+
+    transition-duration: 0.3s;
+  }
+
+  .menu-toogle{
+    width: 40px;
+    height: 30px;
+    margin-right: 40px;
+  }
+
+  .menu-section.on{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #174735;
+    width: 100vw;
+    height: 30vh;
+    z-index: 10;
+  }
+
+  .menu-section.on nav{
+    display: flex;
+  }
+
+  .menu-section.on .menu-toogle{
+    position: absolute;
+    top: 15px;
+    right: 0;
+  }
+
+  .menu-section.on .menu-toogle .one{
+    transform: rotate(45deg) translate(7px, 7px);
+  }
+
+  .menu-section.on .menu-toogle .two{
+    opacity: 0;
+  }
+
+  .menu-section.on .menu-toogle .three{
+    transform: rotate(-45deg) translate(8px, -9px);
+  }
+
+  .menu-section.on nav ul{
+    text-align: center;
+    display: block;
+    width: 90%;
+    line-height: 2;
+  }
+
+  .menu-section.on nav a{
+    transition-duration: 0.5s;
+  }
+}
