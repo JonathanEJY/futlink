@@ -1,0 +1,31 @@
+body {
+  background-color: #174735;
+  font-family: "Ubuntu", "system-ui";
+  color: white;
+}
+
+.link {
+  color: white;
+}
+
+.link:hover {
+  color: #1bbc71;
+}
+
+.table {
+  --bs-table-accent-bg: #174735;
+}
+
+tr > * {
+  color: white !important;
+}
+
+svg {
+  fill: white;
+}
+
+.feature-icon {
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #3e9474;
+}
